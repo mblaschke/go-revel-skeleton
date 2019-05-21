@@ -1,0 +1,5 @@
+/react/build/
+/react/node_modules/
+/documentation/
+/vendor/
+/*.env

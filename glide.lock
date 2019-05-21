@@ -1,0 +1,80 @@
+hash: bece2d1c8b8ea6d84fba431816de2369b425d5e13f5ed252397c47ea6d59d150
+updated: 2019-05-21T21:10:56.324961+02:00
+imports:
+- name: github.com/beorn7/perks
+  version: 4b2b341e8d7715fae06375aa633dbb6e91b3fb46
+  subpackages:
+  - quantile
+- name: github.com/golang/protobuf
+  version: b285ee9cfc6c881bb20c0d8dc73370ea9b9ec90f
+  subpackages:
+  - proto
+- name: github.com/inconshreveable/log15
+  version: 67afb5ed74ec82fd7ac8f49d27c509ac6f991970
+  subpackages:
+  - term
+- name: github.com/mattn/go-colorable
+  version: 3a70a971f94a22f2fa562ffcc7a0eb45f5daf045
+- name: github.com/mattn/go-isatty
+  version: c1975dc15c1d481e8da23f6ed313bb071136b98f
+- name: github.com/matttproud/golang_protobuf_extensions
+  version: c182affec369e30f25d3eb8cd8a478dee585ae7d
+  subpackages:
+  - pbutil
+- name: github.com/prometheus/client_golang
+  version: b5f69192ee7288cccf94bd6bf8a2e270e9726ab6
+  subpackages:
+  - prometheus
+  - prometheus/internal
+  - prometheus/promhttp
+- name: github.com/prometheus/client_model
+  version: fd36f4220a901265f90734c3183c5f0c91daa0b8
+  subpackages:
+  - go
+- name: github.com/prometheus/common
+  version: 17f5ca1748182ddf24fc33a5a7caaaf790a52fcc
+  subpackages:
+  - expfmt
+  - internal/bitbucket.org/ww/goautoneg
+  - model
+- name: github.com/prometheus/procfs
+  version: be78308d8a4ffcb4610e8d21f0e15524ea0d646f
+  subpackages:
+  - internal/fs
+- name: github.com/revel/cmd
+  version: 149f9f992be9b0957fb1ffeda43c14a123ceb43a
+- name: github.com/revel/config
+  version: a81c4105c36841d27e529f875b6062da7b8f986c
+- name: github.com/revel/log15
+  version: 793412a67da6f8d15fede4c38f5c66272478cb8a
+- name: github.com/revel/modules
+  version: 2737bfdaa8c41da68eae12bb18f7279b9f156048
+- name: github.com/revel/pathtree
+  version: 41257a1839e945fce74afd070e02bab2ea2c776a
+- name: github.com/revel/revel
+  version: a3d7a7c23ca885cc5036d3641ede49ce4a14ee2e
+  subpackages:
+  - logger
+  - model
+  - session
+  - testing
+  - utils
+- name: github.com/twinj/uuid
+  version: 7bbe408d339787c56ec15568c947c0959db1b275
+- name: github.com/xeonx/timeago
+  version: 4e7d8c1f9a433881f64a7f87f51e494186857982
+- name: golang.org/x/net
+  version: 65e2d4e15006aab9813ff8769e768bbf4bb667a0
+  subpackages:
+  - websocket
+- name: golang.org/x/sys
+  version: c432e742b0af385916e013f6a34e9e73d139cf82
+  subpackages:
+  - unix
+- name: gopkg.in/fsnotify/fsnotify.v1
+  version: c2828203cd70a50dcccfb2761f8b1f8ceef9a8e9
+- name: gopkg.in/natefinch/lumberjack.v2
+  version: a96e63847dc3c67d17befa69c303767e2f84e54f
+- name: gopkg.in/stack.v0
+  version: 9b43fcefddd0178abdabf4d484ab0d695d0011db
+testImports: []

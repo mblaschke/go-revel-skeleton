@@ -15,11 +15,12 @@ RUN set -x \
 #############################################
 FROM node:alpine as frontend
 # Copy app and build
-COPY ./ /app
+COPY ./react/ /app/react
 COPY --from=npm-dependencies /app/react/node_modules/ /app/react/node_modules/
 RUN set -x \
     && cd /app/react/ \
     && npm run build \
+    && mkdir -p /app/app/views/ \
     && cp /app/react/build/index.html /app/app/views/react.html \
     && rm -rf /app/public/js \
     && mkdir -p /app/public/js \
@@ -31,10 +32,12 @@ RUN set -x \
 #############################################
 FROM golang:1.12 as backend
 WORKDIR /go/src/app
-COPY ./ /go/src/app
+COPY ./glide.lock /go/src/app/glide.lock
+COPY ./glide.yaml /go/src/app/glide.yaml
 RUN curl https://glide.sh/get | sh && glide install
 RUN go get github.com/revel/cmd/revel
 RUN go get -u github.com/golang/dep/cmd/dep
+COPY ./ /go/src/app
 COPY --from=frontend /app /go/src/app
 RUN set -x \
     && revel build app /app prod \

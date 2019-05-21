@@ -8,3 +8,5 @@ import:
   version: master
 - package: github.com/prometheus/client_golang/prometheus/promhttp
   version: master
+- package: github.com/go-resty/resty
+  version: master
